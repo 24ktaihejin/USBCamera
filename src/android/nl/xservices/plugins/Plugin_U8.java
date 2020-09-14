@@ -361,7 +361,10 @@ public class Plugin_U8 implements SoftDecodingAPI.IBarCodeData {
         String btWordCnt = params.getString("btWordCnt");
         String btAryPassWord = params.getString("btAryPassWord");
         String data = params.getString("data");
-        r2000UHFAPI.writeTag(btMemBank, btWordAdd, btWordCnt, btAryPassWord, data);
+        int resultCode = r2000UHFAPI.writeTag(btMemBank, btWordAdd, btWordCnt, btAryPassWord, data);
+        if (resultCode != 0) {
+            callbackId.error(resultCode + "");
+        }
     }
 
     private void readTag(CallbackContext callbackId, JSONArray args) throws JSONException {
@@ -401,7 +404,10 @@ public class Plugin_U8 implements SoftDecodingAPI.IBarCodeData {
         String btWordAdd = params.getString("btWordAdd");
         String btWordCnt = params.getString("btWordCnt");
         String btAryPassWord = params.getString("btAryPassWord");
-        r2000UHFAPI.readTag(btMemBank, btWordAdd, btWordCnt, btAryPassWord);
+        int resultCode = r2000UHFAPI.readTag(btMemBank, btWordAdd, btWordCnt, btAryPassWord);
+        if (resultCode != 0) {
+            callbackId.error(resultCode + "");
+        }
     }
 
     private void killTag(CallbackContext callbackId, JSONArray args) throws JSONException {
@@ -438,7 +444,10 @@ public class Plugin_U8 implements SoftDecodingAPI.IBarCodeData {
         });
         JSONObject params = args.getJSONObject(0);
         String btAryPassWord = params.getString("btAryPassWord");
-        r2000UHFAPI.killTag(btAryPassWord);
+        int resultCode = r2000UHFAPI.killTag(btAryPassWord);
+        if (resultCode != 0) {
+            callbackId.error(resultCode + "");
+        }
     }
 
     private void lockTag(CallbackContext callbackId, JSONArray args) throws JSONException {
@@ -477,7 +486,10 @@ public class Plugin_U8 implements SoftDecodingAPI.IBarCodeData {
         String btAryPassWord = params.getString("btAryPassWord");
         Byte btMemBank = Byte.valueOf(params.getString("btMemBank"));
         Byte btLockType = Byte.valueOf(params.getString("btLockType"));
-        r2000UHFAPI.lockTag(btAryPassWord, btMemBank, btLockType);
+        int resultCode = r2000UHFAPI.lockTag(btAryPassWord, btMemBank, btLockType);
+        if (resultCode != 0) {
+            callbackId.error(resultCode + "");
+        }
     }
 
     public void openDevice() {
