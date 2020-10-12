@@ -29,7 +29,7 @@ public class ZijinUtil extends CordovaPlugin {
     private Plugin_P80 plugin_p80;
     private Plugin_U8 plugin_u8;
     private static final String DEVTYPE_P80 = "P80";
-    private static final String DEVTYPE_U8 = "U8";
+    private static final String DEVTYPE_U8 = "M8";
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
