@@ -1,4 +1,4 @@
-package nl.xservices.plugins;
+package com.zijin.plugin.helper;
 
 import android.content.Context;
 
