@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6325197-7c9e-461e-a6c7-337084ff21e1" name="Default Changelist" comment="" />
+    <list default="true" id="817bc531-1b6c-436a-89dc-e087407055a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/Plugin_U8.java" beforeDir="false" afterPath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/Plugin_U8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/ZijinUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/ZijinUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/www/ZijinUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/www/ZijinUtil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/aar/barcode_sdk.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/aar/fp_jra_sdk_20190920.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/aar/r2000uhf_sdk.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/aar/serialport_sdk.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/ZijinUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/base/ICordovaPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/helper/FileWRTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/helper/MessageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/plugins/FingerprintPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/plugins/ScanPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/plugins/UHFPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libDeviceAPI.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libHHPScanInterface.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libHSMDecoderAPI.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libHsmKil.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libIAL.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libIGLBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libIGLImageAE.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libSDL.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libbarcodereader44.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libDeviceAPI.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libHHPScanInterface.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libHSMDecoderAPI.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libHsmKil.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libIAL.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libIGLBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libIGLImageAE.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libSDL.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libbarcodereader.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libbarcodereader43.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libbarcodereader44.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libDeviceAPI.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libHHPScanInterface.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libHSMDecoderAPI.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libHsmKil.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libIAL.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libIGLBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libIGLImageAE.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libSDL.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libbarcodereader.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libbarcodereader43.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libbarcodereader44.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/cw-deviceapi.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/libs/gson-2.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/ZijinUtil.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +65,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="U8-Refactor" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,6 +79,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="M8" />
+                    <option name="lastUsedInstant" value="1604912148" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
                     <option name="lastUsedInstant" value="1602679652" />
@@ -66,7 +125,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c6325197-7c9e-461e-a6c7-337084ff21e1" name="Default Changelist" comment="" />
+      <changelist id="817bc531-1b6c-436a-89dc-e087407055a9" name="Default Changelist" comment="" />
       <created>1602678124074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -74,6 +133,8 @@
       <workItem from="1602678127970" duration="886000" />
       <workItem from="1602679245089" duration="29000" />
       <workItem from="1602679366143" duration="293000" />
+      <workItem from="1604908084531" duration="19000" />
+      <workItem from="1604911866748" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="重构U8手持机插件代码">
       <created>1602679020119</created>

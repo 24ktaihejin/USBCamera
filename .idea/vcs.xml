@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cordova-plugin" vcs="Git" />
   </component>
 </project>
