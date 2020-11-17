@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-x-zijinutil"
+	version="1.0.0"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>ZijinUtil</name>
+	<js-module src="www/ZijinUtil.js" name="ZijinUtil">
+		<clobbers target="cordova.plugins.ZijinUtil" />
+	</js-module>
+	<platform name="android">
+		<source-file src="src/android/com/zjft/plugin/ZijinUtil.java" target-dir="src/com/zjft/plugin" />
+
+		<source-file src="src/android/com/zjft/plugin/base/AbstractBarcodeData.java" target-dir="src/com/zjft/plugin/base" />
+		<source-file src="src/android/com/zjft/plugin/base/AbstractOnInventoryRealReceiver.java" target-dir="src/com/zjft/plugin/base" />
+		<source-file src="src/android/com/zjft/plugin/base/AbstractOnTagOperation.java" target-dir="src/com/zjft/plugin/base" />
+		<source-file src="src/android/com/zjft/plugin/base/ICordovaPlugin.java" target-dir="src/com/zjft/plugin/base" />
+
+		<source-file src="src/android/com/zjft/plugin/plugins/FingerprintPlugin.java" target-dir="src/com/zjft/plugin/plugins" />
+		<source-file src="src/android/com/zjft/plugin/plugins/ScanPlugin.java" target-dir="src/com/zjft/plugin/plugins" />
+		<source-file src="src/android/com/zjft/plugin/plugins/UHFPlugin.java" target-dir="src/com/zjft/plugin/plugins" />
+
+		<source-file src="src/android/libs/gson-2.8.5.jar" target-dir="libs" />
+		<source-file src="src/android/libs/cw-deviceapi.jar" target-dir="libs" />
+	
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="ZijinUtil"><param name="android-package" value="com.zjft.plugin.ZijinUtil" /></feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+
+		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+		<resource-file src="src/android/aar/barcode_sdk.aar" target="aar/barcode_sdk.aar"/>
+		<resource-file src="src/android/aar/fp_gab_sdk_20200918.aar" target="aar/fp_gab_sdk_20200918.aar"/>
+		<resource-file src="src/android/aar/r2000uhf_sdk_20201015.aar" target="aar/r2000uhf_sdk_20201015.aar"/>
+		<resource-file src="src/android/aar/serialport_sdk_20200918.aar" target="aar/serialport_sdk_20200918.aar"/>
+	</platform>
+</plugin>

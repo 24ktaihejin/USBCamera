@@ -1,201 +1,100 @@
-import {IonicNativePlugin} from '@ionic-native/core';
-import {Observable} from 'rxjs';
-
-export interface UhfOptions {
-    strRepeat?: string;
-    mPos1?: number;
-    mPos2?: number;
-    lAntenna?: number;
-    mCbRealSession?: boolean;
-}
-
-export interface ScannerOptions {
-    PowerOnOff: number;
-    OutputMode: number;
-    TerminalChar: number;
-    Prefix: string;
-    Suffix: string;
-    Volume: number;
-    PlayoneMode: number;
-}
-
-/**
- * @name Zijin Util
- * @description
- * This plugin does something
- *
- * @usage
- * ```typescript
- * import { ZijinUtil } from '@ionic-native/zijin-util';
- *
- *
- * constructor(private zijinUtil: ZijinUtil) { }
- *
- * ...
- *
- *
- * this.zijinUtil.functionName('Hello', 123)
- *   .then((res: any) => console.log(res))
- *   .catch((error: any) => console.error(error));
- *
- * ```
- */
+import { IonicNativePlugin } from '@ionic-native/core';
+import { Observable } from 'rxjs';
 export declare class ZijinUtilOriginal extends IonicNativePlugin {
     /**
-     * 开启接收条码扫描结果
+     * 开启UHF模块
      */
-    openScanReceiver(): Observable<any>;
-
+    openUhf(): Promise<string>;
     /**
-     * @description 单次扫码
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
+     * 开启盘点
      */
-    scan(): Promise<any>;
-
+    startInventoryReal(): Observable<InventoryTagMap[]>;
     /**
-     * @description 连续扫码
-     * @returns {Observable<any>}
-     * @memberof ZijinUtil
+     * 停止盘点
      */
-    continueScanning(): Observable<any>;
-
+    stopInventoryReal(): Promise<string>;
     /**
-     * @description 关闭连续扫码
-     * @returns {void}
-     * @memberof ZijinUtil
+     * 关闭UHF模块
      */
-    closeScanning(): void;
-
+    closeUhf(): Promise<string>;
     /**
-     * @description 设置扫码机参数
-     * @param {ScannerOptions} options
-     * @returns {void}
-     * @memberof ZijinUtil
+     * 设置天线功率
+     * @param outputPower 功率（1～33db）
      */
-    setScanner(options: ScannerOptions): void;
-
+    setOutputPower(outputPower: number): Promise<string>;
     /**
-     * @description 设置连续扫码间隔
-     * @param {number} time
-     * @returns {void}
-     * @memberof ZijinUtil
+     * 标签灭活
+     * @param params
      */
-    setScanInterval(time: number): void;
-
-    /**
-     * @description 打开超高频设备
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
-     */
-    openUHF(): Promise<any>;
-
-    /**
-     * @description 关闭超高频设备
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
-     */
-    closeUHF(): Promise<any>;
-
-    /**
-     * @description 盘存标签（实时模式）
-     * @param {UhfOptions} options
-     * @returns {Observable<any>}
-     * @memberof ZijinUtil
-     */
-    startInventoryReal(options: UhfOptions): Observable<any>;
-
-    /**
-     * @description 停止实时盘点
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
-     */
-    stopInventoryReal(): Promise<any>;
-
-    /**
-     * @description 获取模块温度
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
-     */
-    getReaderTemperature(): Promise<any>;
-
-    /**
-     * @description 销毁标签,灭活标签操作 灭活标签必须提供灭活口令，并且灭活口令不能为00 00 00 00, 因此要销毁一张标签，首先要通过写标签命令，修改密码区灭活口令的内容。
-     * @param {String} btAryPassWord
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
-     */
-    killTag(btAryPassWord: String): Promise<any>;
-
-    /**
-     * @description 锁定标签 锁定标签必须提供访问密码才能进行
-     * @param {{ btAryPassWord: string; btMemBank: string, btLockType: string }} options
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
-     */
-    lockTag(options: {
+    killTag(params: {
         btAryPassWord: string;
-        btMemBank: string;
-        btLockType: string;
-    }): Promise<any>;
-
+    }): Promise<string>;
     /**
-     * @description 读标签 读标签需要输入三个参数：要读取的标签区域，起始地址和数据长度
-     * @param {{ btMemBank: string, btWordAdd: string, btWordCnt: string, btAryPassWord: string }} options
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
+     * 锁定标签
+     * @param params
      */
-    readTag(options: {
-        btMemBank: string;
+    lockTag(params: {
+        btAryPassWord: string;
+        btMemBank: MemBank;
+        btLockType: any;
+    }): Promise<string>;
+    /**
+     * 读取标签
+     * @param params
+     */
+    readTag(params: {
+        btMemBank: MemBank;
         btWordAdd: string;
         btWordCnt: string;
         btAryPassWord: string;
-    }): Promise<any>;
-
+    }): Promise<string>;
     /**
-     * @description 写标签
-     * @param {{btMemBank: string, btWordAdd: string, btWordCnt: string, btAryPassWord: string, btAryData: string}} options
-     * @returns {Promise<any>}
-     * @memberof ZijinUtil
+     * 写数据到标签
+     * @param params
      */
-    writeTag(options: {
-        btMemBank: string;
+    writeTag(params: {
+        btMemBank: MemBank;
         btWordAdd: string;
         btWordCnt: string;
         btAryPassWord: string;
-        btAryData: string;
-    }): Promise<any>;
-
+        data: string;
+    }): Promise<string>;
     /**
-     * @description 复位
-     * @returns {void}
-     * @memberof ZijinUtil
+     * 复位
+     * @param params
      */
     reset(): void;
-
     /**
-     * @description 设置盘点时间间隔，默认2000ms
-     * @param {number} delayMillis
-     * @returns {void}
-     * @memberof ZijinUtil
+     * 开启监听条码扫描的结果
      */
-    setInventoryDelayMillis(delayMillis: number): void;
-
+    openScanReceiver(): Observable<string>;
     /**
-     * @description 设置输出功率，0~33
-     * @param {number} mOutPower
-     * @returns {void}
-     * @memberof ZijinUtil
+     * 关闭对条码扫描结果的监听
      */
-    setOutputPower(mOutPower: number): void;
-
+    closeScanReceiver(): void;
+    /**
+     * 单次条码扫描
+     */
+    scan(): Promise<string>;
+    /**
+     * 连续条码扫描
+     */
+    continueScanning(): Observable<string>;
+    /**
+     * 停止连续条码扫描
+     */
+    stopContinueScanning(): void;
+    /**
+     * 设置连续扫描时中间的间隔
+     * @param intervalTime
+     */
+    setScanInterval(intervalTime: number): void;
     /**
      * @description 打开指纹扫描仪
      * @returns {void}
      * @memberof ZijinUtil
      */
-    openFingerprint(): Promise<any>;
-
+    openFingerprint(): Promise<string>;
     /**
      * @description 关闭指纹扫描仪
      *
@@ -203,29 +102,44 @@ export declare class ZijinUtilOriginal extends IonicNativePlugin {
      * @memberof ZijinUtil
      */
     closeFingerprint(): void;
-
     /**
      * @description 获取指纹特征值
      * @returns {Promise<any>}
      * @memberof ZijinUtil
      */
-    scanFingerprint(): Promise<any>;
-
+    scanFingerprint(): Promise<string>;
     /**
      * @description 比对指纹特征值
-     * @param {string[]} charArray 指纹特征数组
      * @returns {Promise<any>}
      * @memberof ZijinUtil
      */
-    verifyFingerprint(charArray: string[]): Promise<any>;
-
+    verifyFingerprint(): Promise<string>;
     /**
      * @description 同步指纹特征值
      * @param {string[]} charArray 指纹特征数组
      * @returns {Promise<any>}
      * @memberof ZijinUtil
      */
-    loadFpData(charArray: string[]): Promise<any>;
+    loadFpData(fpDataList: Array<string>): Promise<any>;
+}
+export declare enum MemBank {
+    passwordArea = "0",
+    epcArea = "1",
+    tidArea = "2",
+    userArea = "3"
+}
+export interface InventoryTagMap {
+    strPC: string;
+    strCRC: string;
+    strEPC: string;
+    btAntId: number;
+    strRSSI: string;
+    nReadCount: number;
+    strFreq: string;
+    nAnt1: number;
+    nAnt2: number;
+    nAnt3: number;
+    nAnt4: number;
 }
 
 export declare const ZijinUtil: ZijinUtilOriginal;
