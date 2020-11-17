@@ -2,60 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817bc531-1b6c-436a-89dc-e087407055a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/Plugin_U8.java" beforeDir="false" afterPath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/Plugin_U8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/ZijinUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/src/android/nl/xservices/plugins/ZijinUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/www/ZijinUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin/www/ZijinUtil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/aar/barcode_sdk.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/aar/fp_jra_sdk_20190920.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/aar/r2000uhf_sdk.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/aar/serialport_sdk.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/ZijinUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/base/ICordovaPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/helper/FileWRTool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/helper/MessageUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/plugins/FingerprintPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/plugins/ScanPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/com/zijin/plugin/plugins/UHFPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libDeviceAPI.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libHHPScanInterface.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libHSMDecoderAPI.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libHsmKil.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libIAL.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libIGLBarDecoder.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libIGLImageAE.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libSDL.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/arm64-v8a/libbarcodereader44.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libDeviceAPI.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libHHPScanInterface.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libHSMDecoderAPI.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libHsmKil.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libIAL.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libIGLBarDecoder.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libIGLImageAE.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libSDL.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libbarcodereader.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libbarcodereader43.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi-v7a/libbarcodereader44.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libDeviceAPI.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libHHPScanInterface.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libHSMDecoderAPI.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libHsmKil.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libIAL.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libIGLBarDecoder.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libIGLImageAE.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libSDL.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libbarcodereader.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libbarcodereader43.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/armeabi/libbarcodereader44.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/cw-deviceapi.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/libs/gson-2.8.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/ZijinUtil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CordovaPlugins/ZijinUtil-PhoneGap-Plugin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,28 +113,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="重构U8手持机插件代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构U8手持机插件代码" />
+    <MESSAGE value="feat: M8插件归档" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: M8插件归档" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="332" y="25" key="CommitChangelistDialog2" timestamp="1602679019620">
+    <state x="332" y="25" key="CommitChangelistDialog2" timestamp="1605596239294">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
-    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.800@0.25.1440.800" timestamp="1602679019620" />
+    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.800@0.25.1440.800" timestamp="1605596239294" />
     <state x="144" y="89" key="MergeDialog" timestamp="1602679607521">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
     <state x="144" y="89" key="MergeDialog/0.25.1440.800@0.25.1440.800" timestamp="1602679607521" />
-    <state x="436" y="143" key="MultipleFileMergeDialog" timestamp="1602679607557">
+    <state x="436" y="143" key="MultipleFileMergeDialog" timestamp="1605596328974">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
-    <state x="436" y="143" key="MultipleFileMergeDialog/0.25.1440.800@0.25.1440.800" timestamp="1602679607557" />
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1602679449999">
+    <state x="436" y="143" key="MultipleFileMergeDialog/0.25.1440.800@0.25.1440.800" timestamp="1605596328974" />
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1605596336476">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.800@0.25.1440.800" timestamp="1602679449999" />
-    <state x="458" y="219" key="git4idea.merge.GitPullDialog" timestamp="1602679547056">
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.800@0.25.1440.800" timestamp="1605596336476" />
+    <state x="458" y="219" key="git4idea.merge.GitPullDialog" timestamp="1605596298194">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
-    <state x="458" y="219" key="git4idea.merge.GitPullDialog/0.25.1440.800@0.25.1440.800" timestamp="1602679547056" />
+    <state x="458" y="219" key="git4idea.merge.GitPullDialog/0.25.1440.800@0.25.1440.800" timestamp="1605596298194" />
   </component>
 </project>
