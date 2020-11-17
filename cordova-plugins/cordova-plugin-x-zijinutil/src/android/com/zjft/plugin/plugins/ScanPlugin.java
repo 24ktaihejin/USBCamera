@@ -57,8 +57,8 @@ public class ScanPlugin extends AbstractBarcodeData implements ICordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
-        this.action = action;
         if ("openScanReceiver".equals(action)) {
+            this.action = action;
             this.callbackContext = callbackContext;
             if (!this.scanReceiverIsOpen) {
                 openScanReceiver();
@@ -70,6 +70,7 @@ public class ScanPlugin extends AbstractBarcodeData implements ICordovaPlugin {
             }
             return true;
         } else if ("scan".equals(action)) {
+            this.action = action;
             if (!this.scanReceiverIsOpen){
                 openScanReceiver();
             }
@@ -77,6 +78,7 @@ public class ScanPlugin extends AbstractBarcodeData implements ICordovaPlugin {
             scanBarcode();
             return true;
         } else if ("continueScanning".equals(action)) {
+            this.action = action;
             this.callbackContext = callbackContext;
             if (!this.scanReceiverIsOpen){
                 openScanReceiver();
