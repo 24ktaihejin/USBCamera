@@ -114,9 +114,13 @@ public class UHFPlugin implements ICordovaPlugin {
     private void writeTag(JSONArray args) {
         uhfApi.setOnTagOperation(new AbstractOnTagOperation() {
             @Override
-            public void writeTagResult(String s) {
-                super.writeTagResult(s);
-                callbackContext.success(s);
+            public void onLog(String s, int i) {
+                if (s.contains("失败")) {
+                    callbackContext.error(s);
+                } else {
+                    callbackContext.success("写入成功");
+                }
+                Log.i(TAG, s);
             }
         });
         try {
@@ -126,24 +130,24 @@ public class UHFPlugin implements ICordovaPlugin {
             String btWordCnt = params.getString("btWordCnt");
             String btAryPassWord = params.getString("btAryPassWord");
             String data = params.getString("data");
-            int resultCode = uhfApi.writeTag(btMemBank, btWordAdd, btWordCnt, btAryPassWord, data);
-            if (resultCode != 0) {
-                callbackContext.error("write tag failed, result code: " + resultCode);
-            }
+            uhfApi.writeTag(btMemBank, btWordAdd, btWordCnt, btAryPassWord, data);
         } catch (JSONException e) {
             e.printStackTrace();
             callbackContext.error("write tag failed, cause: " + e.getMessage());
         }
     }
-
     private void readTag(JSONArray args) {
         uhfApi.setOnTagOperation(new AbstractOnTagOperation() {
-            @Override
-            public void readTagResult(OperateTagBuffer operateTagBuffer) {
-                super.readTagResult(operateTagBuffer);
-                callbackContext.success(new Gson().toJson(operateTagBuffer));
-            }
-        });
+                 @Override
+                 public void onLog(String s, int i) {
+                     if (s.contains("失败")) {
+                         callbackContext.error(s);
+                     } else {
+                         callbackContext.success("写入成功");
+                     }
+                     Log.i(TAG, s);
+                 }
+             });
         try {
             JSONObject params = args.getJSONObject(0);
             Byte btMemBank = Byte.valueOf(params.getString("btMemBank"));
