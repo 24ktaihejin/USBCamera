@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="817bc531-1b6c-436a-89dc-e087407055a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/plugins/ScanPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/plugins/ScanPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/www/ZijinUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/www/ZijinUtil.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,8 @@
       <workItem from="1602679366143" duration="293000" />
       <workItem from="1604908084531" duration="19000" />
       <workItem from="1604911866748" duration="365000" />
-      <workItem from="1605605393351" duration="292000" />
+      <workItem from="1605605393351" duration="511000" />
+      <workItem from="1605681558858" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="重构U8手持机插件代码">
       <created>1602679020119</created>
@@ -99,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605596550120</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix：修复 action 赋值问题">
+      <created>1605605857941</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605605857941</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,13 +130,14 @@
     <MESSAGE value="重构U8手持机插件代码" />
     <MESSAGE value="feat: M8插件归档" />
     <MESSAGE value="doc: 更新README" />
-    <option name="LAST_COMMIT_MESSAGE" value="doc: 更新README" />
+    <MESSAGE value="fix：修复 action 赋值问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix：修复 action 赋值问题" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="332" y="25" key="CommitChangelistDialog2" timestamp="1605596549990">
+    <state x="332" y="25" key="CommitChangelistDialog2" timestamp="1605605857785">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
-    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.800@0.25.1440.800" timestamp="1605596549990" />
+    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.800@0.25.1440.800" timestamp="1605605857785" />
     <state x="144" y="89" key="MergeDialog" timestamp="1602679607521">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
@@ -137,10 +146,10 @@
       <screen x="0" y="25" width="1440" height="800" />
     </state>
     <state x="436" y="143" key="MultipleFileMergeDialog/0.25.1440.800@0.25.1440.800" timestamp="1605596328974" />
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1605596555727">
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1605605865777">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.800@0.25.1440.800" timestamp="1605596555727" />
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.800@0.25.1440.800" timestamp="1605605865777" />
     <state x="458" y="219" key="git4idea.merge.GitPullDialog" timestamp="1605596298194">
       <screen x="0" y="25" width="1440" height="800" />
     </state>

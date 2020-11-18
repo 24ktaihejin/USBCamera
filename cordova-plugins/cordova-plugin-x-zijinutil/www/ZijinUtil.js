@@ -32,7 +32,7 @@ exports.readTag = function (params, successCallback, errorCallback) {
     exec(successCallback, errorCallback, 'ZijinUtil', 'readTag', [params])
 }
 
-exports.writeTag = function (params, successCallback, errorCallback, params) {
+exports.writeTag = function (params, successCallback, errorCallback) {
     exec(successCallback, errorCallback, 'ZijinUtil', 'writeTag', [params])
 }
 
