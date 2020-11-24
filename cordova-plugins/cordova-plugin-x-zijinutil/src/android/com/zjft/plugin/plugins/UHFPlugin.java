@@ -112,9 +112,11 @@ public class UHFPlugin implements ICordovaPlugin {
     }
 
     private void writeTag(JSONArray args) {
+        final boolean[] isGetWriteResult = {false};
         uhfApi.setOnTagOperation(new AbstractOnTagOperation() {
             @Override
             public void onLog(String s, int i) {
+                isGetWriteResult[0] = true;
                 if (s.contains("失败")) {
                     callbackContext.error(s);
                 } else {
@@ -131,23 +133,34 @@ public class UHFPlugin implements ICordovaPlugin {
             String btAryPassWord = params.getString("btAryPassWord");
             String data = params.getString("data");
             uhfApi.writeTag(btMemBank, btWordAdd, btWordCnt, btAryPassWord, data);
+            // 检测如果超过一秒还没有接收到sdk返回的写入结果的通知那么直接判定为写如失败
+            cordva.getThreadPool().execute(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(1000);
+                        if (!isGetWriteResult[0]) {
+                            callbackContext.error("写入失败");
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
         } catch (JSONException e) {
             e.printStackTrace();
             callbackContext.error("write tag failed, cause: " + e.getMessage());
         }
     }
+
     private void readTag(JSONArray args) {
         uhfApi.setOnTagOperation(new AbstractOnTagOperation() {
-                 @Override
-                 public void onLog(String s, int i) {
-                     if (s.contains("失败")) {
-                         callbackContext.error(s);
-                     } else {
-                         callbackContext.success("写入成功");
-                     }
-                     Log.i(TAG, s);
-                 }
-             });
+            @Override
+            public void readTagResult(OperateTagBuffer operateTagBuffer) {
+                super.readTagResult(operateTagBuffer);
+                callbackContext.success(new Gson().toJson(operateTagBuffer));
+            }
+        });
         try {
             JSONObject params = args.getJSONObject(0);
             Byte btMemBank = Byte.valueOf(params.getString("btMemBank"));
@@ -257,7 +270,9 @@ public class UHFPlugin implements ICordovaPlugin {
         this.cordva.getThreadPool().execute(new Runnable() {
             @Override
             public void run() {
-                uhfApi.close();
+                if (uhfApi != null) {
+                    uhfApi.close();
+                }
                 Log.i(TAG, "uhf开启失败");
                 if (callbackContext != null) {
                     callbackContext.success("close uhf success.");
