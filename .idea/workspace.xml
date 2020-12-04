@@ -64,6 +64,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/USBCamera" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,6 +91,8 @@
       <workItem from="1604911866748" duration="365000" />
       <workItem from="1605605393351" duration="511000" />
       <workItem from="1605681558858" duration="2333000" />
+      <workItem from="1606195877916" duration="207000" />
+      <workItem from="1607072274653" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="重构U8手持机插件代码">
       <created>1602679020119</created>
@@ -126,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605686239616</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix：当SDK不发送当前写入的状态时根据间隔时间自行判定">
+      <created>1606196045471</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606196045471</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,14 +162,15 @@
     <MESSAGE value="fix：修复 action 赋值问题" />
     <MESSAGE value="fix：修复参数传递异常" />
     <MESSAGE value="fix：修复标签写入状态获取错误的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix：修复标签写入状态获取错误的问题" />
+    <MESSAGE value="fix：当SDK不发送当前写入的状态时根据间隔时间自行判定" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix：当SDK不发送当前写入的状态时根据间隔时间自行判定" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="332" y="25" key="CommitChangelistDialog2" timestamp="1606195949048">
+    <state x="332" y="25" key="CommitChangelistDialog2" timestamp="1606196045288">
       <screen x="0" y="25" width="1440" height="800" />
     </state>
     <state x="332" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605681631549" />
-    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.800@0.25.1440.800" timestamp="1606195949048" />
+    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.800@0.25.1440.800" timestamp="1606196045288" />
     <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.803@0.25.1440.803" timestamp="1605686239409" />
     <state x="144" y="89" key="MergeDialog" timestamp="1602679607521">
       <screen x="0" y="25" width="1440" height="800" />
@@ -169,11 +180,11 @@
       <screen x="0" y="25" width="1440" height="800" />
     </state>
     <state x="436" y="143" key="MultipleFileMergeDialog/0.25.1440.800@0.25.1440.800" timestamp="1605596328974" />
-    <state x="320" y="161" key="Vcs.Push.Dialog.v2" timestamp="1605686246591">
-      <screen x="0" y="25" width="1440" height="803" />
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1606196054182">
+      <screen x="0" y="25" width="1440" height="800" />
     </state>
     <state x="320" y="152" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605681638836" />
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.800@0.25.1440.800" timestamp="1605605865777" />
+    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.800@0.25.1440.800" timestamp="1606196054182" />
     <state x="320" y="161" key="Vcs.Push.Dialog.v2/0.25.1440.803@0.25.1440.803" timestamp="1605686246591" />
     <state x="458" y="219" key="git4idea.merge.GitPullDialog" timestamp="1605596298194">
       <screen x="0" y="25" width="1440" height="800" />

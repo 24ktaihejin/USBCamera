@@ -1,0 +1,14 @@
+repositories{
+   jcenter()
+   maven { url 'https://jitpack.io' }
+
+  dependencies {
+	    implementation 'com.github.Merpyzf:USBCamera:v1.0.0'
+	}
+ android {
+    packagingOptions {
+      exclude 'META-INF/NOTICE'
+      exclude 'META-INF/LICENSE'
+    }
+ }
+}

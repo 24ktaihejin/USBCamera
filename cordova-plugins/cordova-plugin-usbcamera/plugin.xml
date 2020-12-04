@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-usbcamera" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>USBCameraPlugin</name>
+    <js-module name="USBCameraPlugin" src="www/USBCameraPlugin.js">
+        <clobbers target="cordova.plugins.USBCameraPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="USBCameraPlugin">
+                <param name="android-package" value="com.zijin.plugin.usbcamera.USBCameraPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/USBCameraPlugin.java" target-dir="src/com/zijin/plugin/usbcamera" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>
