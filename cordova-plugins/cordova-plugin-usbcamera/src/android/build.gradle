@@ -3,7 +3,7 @@ repositories{
    maven { url 'https://jitpack.io' }
 
   dependencies {
-	    implementation 'com.github.Merpyzf:USBCamera:v1.0.0'
+	    implementation 'com.github.Merpyzf:USBCamera:v1.3.1'
 	}
  android {
     packagingOptions {
