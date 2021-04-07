@@ -191,10 +191,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat：添加 ionic-native 插件包" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="27" key="CommitChangelistDialog2" timestamp="1617764126954">
-      <screen x="0" y="25" width="1440" height="813" />
+    <state x="320" y="27" key="CommitChangelistDialog2" timestamp="1617783018896">
+      <screen x="0" y="25" width="1440" height="815" />
     </state>
     <state x="320" y="27" key="CommitChangelistDialog2/0.25.1440.813@0.25.1440.813" timestamp="1617764126954" />
+    <state x="320" y="27" key="CommitChangelistDialog2/0.25.1440.815@0.25.1440.815" timestamp="1617783018896" />
     <state x="320" y="166" key="Vcs.Push.Dialog.v2" timestamp="1617763387841">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -203,5 +204,9 @@
       <screen x="0" y="25" width="1440" height="808" />
     </state>
     <state x="484" y="143" key="git4idea.branch.GitSmartOperationDialog/0.25.1440.808@0.25.1440.808" timestamp="1609902383134" />
+    <state x="856" y="427" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1617782987866">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state x="856" y="427" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.25.1440.815@0.25.1440.815" timestamp="1617782987866" />
   </component>
 </project>

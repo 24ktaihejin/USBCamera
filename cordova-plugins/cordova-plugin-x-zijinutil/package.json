@@ -1,0 +1,45 @@
+{
+  "_from": "cordova-plugin-x-zijinutil-m8@1.0.0",
+  "_id": "cordova-plugin-x-zijinutil-m8@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-jRbcwxsT0/bWxSmJmLfCmEqNYqZmbFYqldA7kRMWz4G/xjRi0U22RlFH59Cm3N1+V3taytcUaRgCPfLNhvf7ZA==",
+  "_location": "/cordova-plugin-x-zijinutil-m8",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-x-zijinutil-m8@1.0.0",
+    "name": "cordova-plugin-x-zijinutil-m8",
+    "escapedName": "cordova-plugin-x-zijinutil-m8",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-x-zijinutil-m8/-/cordova-plugin-x-zijinutil-m8-1.0.0.tgz",
+  "_shasum": "40b8a120f800a0e64979c25adbf3f40c91ad3bde",
+  "_spec": "cordova-plugin-x-zijinutil-m8@1.0.0",
+  "_where": "/Users/wangke/Workspace/CompanyProjects/IonicProjects/wf/itms_mobile",
+  "author": {
+    "name": "wangle"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-x-zijinutil-m8",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "> 该版本同时兼容P80和U8两种机型；",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "ISC",
+  "name": "cordova-plugin-x-zijinutil-m8",
+  "version": "1.0.0"
+}
