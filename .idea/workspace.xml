@@ -3,33 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="817bc531-1b6c-436a-89dc-e087407055a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IonicNative/zijin-util/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IonicNative/zijin-util/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IonicNative/zijin-util/ngx/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IonicNative/zijin-util/ngx/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IonicNative/zijin-util/ngx/index.metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/aar/barcode_sdk.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/aar/fp_gab_sdk_20200918.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/aar/r2000uhf_sdk_20201015.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/aar/serialport_sdk_20200918.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/ZijinUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/base/AbstractBarcodeData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/base/AbstractOnInventoryRealReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/base/AbstractOnTagOperation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/base/ICordovaPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/plugins/FingerprintPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/plugins/ScanPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/com/zjft/plugin/plugins/UHFPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/libs/AMap_Location_V4.8.0_20191210.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/libs/cw-deviceapi.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/libs/gson-2.8.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/libs/sqlite-connector.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/src/android/libs/sqlite-native-driver.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova-plugins/cordova-plugin-x-zijinutil/www/ZijinUtil.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +77,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ionic-native" />
       <recent name="$PROJECT_DIR$/USBCamera" />
       <recent name="$PROJECT_DIR$/cordova-plugins" />
     </key>
@@ -178,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607073062473</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat：添加 ionic-native 插件包">
+      <created>1617763380055</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617763380055</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,36 +187,21 @@
     <MESSAGE value="fix：修复标签写入状态获取错误的问题" />
     <MESSAGE value="fix：当SDK不发送当前写入的状态时根据间隔时间自行判定" />
     <MESSAGE value="feat：添加自动识别人脸检测插件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat：添加自动识别人脸检测插件" />
+    <MESSAGE value="feat：添加 ionic-native 插件包" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat：添加 ionic-native 插件包" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="332" y="25" key="CommitChangelistDialog2" timestamp="1607073062170">
-      <screen x="0" y="25" width="1440" height="800" />
+    <state x="320" y="27" key="CommitChangelistDialog2" timestamp="1617764126954">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="332" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605681631549" />
-    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.800@0.25.1440.800" timestamp="1607073062170" />
-    <state x="332" y="25" key="CommitChangelistDialog2/0.25.1440.803@0.25.1440.803" timestamp="1605686239409" />
-    <state x="144" y="89" key="MergeDialog" timestamp="1602679607521">
-      <screen x="0" y="25" width="1440" height="800" />
+    <state x="320" y="27" key="CommitChangelistDialog2/0.25.1440.813@0.25.1440.813" timestamp="1617764126954" />
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2" timestamp="1617763387841">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="144" y="89" key="MergeDialog/0.25.1440.800@0.25.1440.800" timestamp="1602679607521" />
-    <state x="436" y="143" key="MultipleFileMergeDialog" timestamp="1605596328974">
-      <screen x="0" y="25" width="1440" height="800" />
-    </state>
-    <state x="436" y="143" key="MultipleFileMergeDialog/0.25.1440.800@0.25.1440.800" timestamp="1605596328974" />
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2" timestamp="1607073067039">
-      <screen x="0" y="25" width="1440" height="800" />
-    </state>
-    <state x="320" y="152" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605681638836" />
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.25.1440.800@0.25.1440.800" timestamp="1607073067039" />
-    <state x="320" y="161" key="Vcs.Push.Dialog.v2/0.25.1440.803@0.25.1440.803" timestamp="1605686246591" />
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1617763387841" />
     <state x="484" y="143" key="git4idea.branch.GitSmartOperationDialog" timestamp="1609902383134">
       <screen x="0" y="25" width="1440" height="808" />
     </state>
     <state x="484" y="143" key="git4idea.branch.GitSmartOperationDialog/0.25.1440.808@0.25.1440.808" timestamp="1609902383134" />
-    <state x="458" y="219" key="git4idea.merge.GitPullDialog" timestamp="1605596298194">
-      <screen x="0" y="25" width="1440" height="800" />
-    </state>
-    <state x="458" y="219" key="git4idea.merge.GitPullDialog/0.25.1440.800@0.25.1440.800" timestamp="1605596298194" />
   </component>
 </project>
