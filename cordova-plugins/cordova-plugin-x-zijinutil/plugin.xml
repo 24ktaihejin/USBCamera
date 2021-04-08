@@ -18,7 +18,6 @@
 		<source-file src="src/android/com/zjft/plugin/plugins/FingerprintPlugin.java" target-dir="src/com/zjft/plugin/plugins" />
 		<source-file src="src/android/com/zjft/plugin/plugins/ScanPlugin.java" target-dir="src/com/zjft/plugin/plugins" />
 		<source-file src="src/android/com/zjft/plugin/plugins/UHFPlugin.java" target-dir="src/com/zjft/plugin/plugins" />
-		<source-file src="src/android/libs/AMap_Location_V4.8.0_20191210.jar" target-dir="libs" />
 		<source-file src="src/android/libs/cw-deviceapi.jar" target-dir="libs" />
 		<source-file src="src/android/libs/sqlite-connector.jar" target-dir="libs" />
 		<source-file src="src/android/libs/sqlite-native-driver.jar" target-dir="libs" />
