@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.zijin.camera_lib.CameraUserInfoActivity;
 import com.zijin.camera_lib.CameraActivity;
 import com.zijin.camera_lib.UsbFaceVerifyActivity;
 import com.zijin.camera_lib.hepler.DataPersistenceHelper;
@@ -47,6 +48,16 @@ public class USBCameraPlugin extends CordovaPlugin {
             intent.putExtra("authorization", authorization);
             doWhat = UsbFaceVerifyActivity.FOR_USER_INFO;
             cordova.startActivityForResult(this, intent, UsbFaceVerifyActivity.REQ_START_USB_CAMERA);
+            return true;
+        }  else if ("getUserInfoByCamera".equals(action)) {
+            JSONObject jsonObject = args.getJSONObject(0);
+            String baseUrl = jsonObject.getString("baseUrl");
+            String authorization = "Bearer " + jsonObject.getString("authorization");
+
+            Intent intent = new Intent(cordova.getContext(), CameraUserInfoActivity.class);
+            intent.putExtra("base_url", baseUrl);
+            intent.putExtra("authorization", authorization);
+            cordova.startActivityForResult(this, intent, CameraUserInfoActivity.REQ_START_CAMERA);
             return true;
         } else if ("faceVerifyByCamera".equals(action)) {
             JSONObject jsonObject = args.getJSONObject(0);
