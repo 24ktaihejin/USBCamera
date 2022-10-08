@@ -33,3 +33,17 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:2.4.0"
     implementation 'com.google.code.gson:gson:2.8.5'
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.camera'
+                artifactId = 'library'
+                version = '1.0.0'
+            }
+        }
+    }
+}
